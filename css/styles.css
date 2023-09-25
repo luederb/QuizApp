@@ -48,6 +48,9 @@ h1 {
   grid-row: 1;
   width: 50px;
   justify-self: end;
+  position: absolute;
+  top: -20px;
+  right: -10px;
 }
 .question {
   text-align: center;
@@ -73,7 +76,8 @@ h1 {
 }
 #category-nav {
   grid-row: 5;
-  justify-self: start;
+  justify-self: left;
+  padding: 0px 0px 0px 10px;
 }
 .category-tags {
   list-style: none;
@@ -114,6 +118,7 @@ footer {
   list-style: none;
   display: grid;
   grid-template-rows: none;
+  padding: 0px;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
   text-align: center;
