@@ -12,13 +12,16 @@
       <h1>Quizz App</h1>
     </header>
     <main>
-      <section class="Question-Card">
-        <h2 class="Question">
+      <section class="question-card">
+        <h2 class="question">
           <p>What property flips the axes in flexbox?</p>
         </h2>
-        <button class="Answer-button" type="button">Show Answer</button>
+        <button class="answer-button" type="button">Show Answer</button>
+        <section hidden class="answer">
+          <p>flex-direction</p>
+        </section>
         <nav>
-          <ul class="category-tags">
+          <ul class="category-tags" role="list">
             <li>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
@@ -42,7 +45,19 @@
       </section>
     </main>
     <footer>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li>
+            <a>Home Page</a>
+          </li>
+          <li>
+            <a>Bookmarks</a>
+          </li>
+          <li>
+            <a>Profile</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
