@@ -1,6 +1,24 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
 h1 {
-  color: blue;
+  color: black;
 }
 .question-card {
+  background: rgb(236, 236, 236);
+  border: solid;
+  border-width: 0.5px;
   display: flex;
+  flex-direction: column;
+}
+.category-tags {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
 }
