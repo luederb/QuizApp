@@ -1,3 +1,125 @@
+html {
+  height: 500px;
+}
+body {
+  margin: 0px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 500px;
+  position: relative;
+  /* position: static; */
+}
+header {
+  grid-row: 1;
+  text-align: center;
+  background: rgb(236, 236, 236);
+  border: solid;
+  border-width: 0.5px;
+  width: 100%;
+  margin: 0px 20px 0px 20px;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+main {
+  grid-row: 2;
+  padding: 0px 0px 110px;
+}
 h1 {
   color: black;
+  margin: 0px;
+}
+.question-card {
+  background: rgb(236, 236, 236);
+  border: solid;
+  border-width: 0.5px;
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: minmax(auto) 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  top: 60px;
+}
+.bookmark-button {
+  grid-row: 1;
+  width: 50px;
+  justify-self: end;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+}
+.question {
+  text-align: center;
+  grid-row: 2;
+  place-self: center;
+  margin: 10px;
+}
+.question p {
+  margin: 0px;
+}
+.answer-button {
+  grid-row: 3;
+  width: fit-content;
+  justify-self: center;
+}
+.answer {
+  grid-row: 4;
+  justify-self: center;
+  margin: 10px;
+}
+.answer p {
+  margin: 0px;
+}
+#category-nav {
+  grid-row: 5;
+  justify-self: left;
+  padding: 0px 0px 0px 10px;
+}
+.category-tags {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.category-tags a {
+  color: black;
+  border: solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: grey;
+  text-decoration: none;
+  text-align: center;
+}
+.category-tags a:hover {
+  background: rgb(95, 95, 141);
+  border-color: rgb(95, 95, 141);
+  color: orange;
+}
+footer {
+  grid-row: 3;
+  width: 100%;
+  background: rgb(236, 236, 236);
+  border: solid;
+  border-width: 0.5px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+}
+#nav-items {
+}
+#nav-items ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: none;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  text-align: center;
 }
