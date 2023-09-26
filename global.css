@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 :root {
   background-color: rgb(153, 107, 22);
 }
