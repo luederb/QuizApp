@@ -1,8 +1,8 @@
-/* :root {
-  height: 100px;
-} */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   background-color: rgb(153, 107, 22);
-  height: 100px;
 }
